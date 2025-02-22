@@ -86,7 +86,7 @@ flowchart LR
 |[*config*](config)|Contient les différents fichiers de configuration du système.|
 |[*html*](html)|Contient les ressources nécessaires à la génération des sorties, comme les patrons html, les feuilles de style, les scripts et les polices d'écriture.|
 |[*traductions*](traductions)|Contient les fichiers de traduction du site.|
-|[*Extraction_Donnees*](Extraction_Donnees)| Scripts python destinés à extraire les donneés des fichiers .docx du lexique pour une conversion en fichier RDF. Ces scripts sont contenus dans un fichier Google Colab pour une utilisation, obligatoirement externe, plus simple pour les administrateurs. |
+|[*extract_data*](extract_data)| Scripts python destinés à extraire les donneés des fichiers .docx du lexique pour une conversion en fichier RDF. Ces scripts sont contenus dans un fichier Google Colab pour une utilisation, obligatoirement externe, plus simple pour les administrateurs. |
 |[*uploads*](/uploads)|*(à créer, voir [la note de portabilité](PORT.md#etape-3--configuration))* Dossier accueillant des sous-dossiers pour chaque administrateur, stockant temporairement les fichiers téléversés. |
 |[*secure*](/secure)|*(à créer, voir [la note de portabilité](PORT.md#etape-3--configuration))* Dossier accueillant les fichiers de clés pour le chiffrement, déchiffrement et signature des tokens. |
 
@@ -123,11 +123,11 @@ flowchart LR
 |[`prefixes.ttl`](/config/prefixes.ttl)| Préfixes RDF à inclure dans chaque requête au TripleStore. |
 |[`server.txt`](/config/server.txt)| *(à créer, voir [la note de portabilité](PORT.md#etape-3--configuration))* Permet au système de connaître l'URL de base, sans le path. Cela est particulièrement nécessaire dans le cas où le site se trouve dans un sous-dossier de *public_html*. |
 
-### ./Extraction_Donnees
+### ./extract_data
 
 |  | Description |
 |---------|-------------|
-|[`Extraction_Donnees.ipynb`](/Extraction_Donnees/Extraction_Donnees.ipynb)| Fichier Python Notebook (Google Colab) contenant les scripts permettant de convertir un fichier docx en un fichier JSON, puis un fichier JSON en un fichier rdf importable.
+|[`Extraction_de_donnees.ipynb`](/Extraction_Donnees/Extraction__de_données.ipynb)| Fichier Python Notebook (Google Colab) contenant les scripts permettant de convertir un fichier docx en un fichier JSON, puis un fichier JSON en un fichier rdf importable.
 
 ### ./html
 
