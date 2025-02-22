@@ -38,7 +38,7 @@ Créez le fichier `config/db.json` avec la structure suivante :
     "db_name" : "nom_de_la_db",
     "db_user" : "nom_dutilisateur",
     "db_pwd" : "mot_de_passe",
-    "store_name" : "makki",
+    "store_name" : "nom_store",
     "bnode_prefix" : "bn",
     "sem_html_formats" : "rdfa microformats"
 }
