@@ -246,17 +246,6 @@ a.mot_titre {
     size:20px;
 }
 
-#bouton_quiconnait{
-    color: #1b263b; /* Couleur du texte */
-    font-size: 20px;
-    font-family: 'Alegreya', sans-serif;
-    font-weight: 300;
-    flex: 0 0 200px; /* Largeur fixe pour les labels */
-    text-align: center; 
-    margin: 0; /* Supprime les marges inutiles */
-    margin-left:20px;
-}
-
 #bouton_quiconnait {
     font-family: 'Alegreya', sans-serif;
     font-size: 15px;
@@ -268,6 +257,7 @@ a.mot_titre {
     border-radius: 5px;
     border: none;
     padding: 10px;
+    text-align: center; 
     width: 100%; /* Bouton large */
     max-width: 300px; /* Largeur max du bouton */
     margin: 20px auto 0; /* Centrage du bouton */
