@@ -127,7 +127,7 @@ flowchart LR
 
 |  | Description |
 |---------|-------------|
-|[`Extraction_de_donnees.ipynb`](/Extraction_Donnees/Extraction__de_données.ipynb)| Fichier Python Notebook (Google Colab) contenant les scripts permettant de convertir un fichier docx en un fichier JSON, puis un fichier JSON en un fichier rdf importable.
+|[`Extraction_de_donnees.ipynb`](/extract_data/Extraction_de_donnees.ipynb)| Fichier Python Notebook (Google Colab) contenant les scripts permettant de convertir un fichier docx en un fichier JSON, puis un fichier JSON en un fichier rdf importable.
 
 ### ./html
 
