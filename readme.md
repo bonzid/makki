@@ -15,9 +15,10 @@ Pour valoriser ce précieux travail, nous avons développé une plateforme perme
 
 #### Changements effectués avec la version 1.5 : 
 - <b>Refonte visuelle de l'interface</b> : changements de la charte graphique et de l'organisation de l'interface utilisateur
-- <b>Nouvelles fonctionnalités</b> : ajout d'une rubrique "Connaissez-vous ce mot ?", affichage d'une carte pour les mots étant localisés, traduction de l'interface en anglais, guide détaillé de l'utilisation de la plateforme côté administrateur
-- <b>Réorganisation de certaines caractéristiques</b> : affichage des thèmes non raccourcis, ajout d'un onglet "Remerciements", ajout d'une page "Bibliographie", suppression de la fonction "Télécharger" 
-- <b>Corrections</b> : fonction recherche, corrections d'affichage mineures 
+- <b>Nouvelles fonctionnalités</b> : ajout d'une rubrique "Connaissez-vous ce mot ?", traduction de l'interface en anglais, guide détaillé de l'utilisation de la plateforme côté administrateur
+- <b>Gestion des fichiers de données</b> : mise à jour des scripts d'extraction de données et mise en forme dans un notebook pour une meilleure accessibilité, avec guide détaillée et tutoriels d'utilisation
+- <b>Réorganisation de certaines caractéristiques</b> : affichage des thèmes, ajout d'un onglet "Remerciements", ajout d'une page "Bibliographie", suppression de la fonction "Télécharger" 
+- <b>Corrections</b> : fonction recherche, corrections d'affichage mineures
 - <b>Mise à jour de la documentation</b>
 
 
