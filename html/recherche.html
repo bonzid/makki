@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title class="trad" id="title">Lexique libanais de Makki - Recherche</title>
+        <link rel="stylesheet" href="styles/recherche.css" />
+        <script src="scripts/jquery.js"></script>
+    </head>
+
+    <body>
+
+        <div class="content">
+        <form id="search-form" role="search" method="GET">
+            <p class="textetitre trad" id="titre_recherche">Recherche avancée</p>
+
+            <p class="texte trad" id="explications_recherche">Ici des explications de la recherche</p>
+
+            <div class="search-options">
+                
+                <div class="top">
+                    <label for="search-mot" id="search-mot" class="trad">Expression</label>
+                    <div class="title crit">
+                        <input type="text" id="search-mot" name="title" class="trad_placeholder champ" placeholder="Expression, mot">
+                        <i class="fas fa-trash-alt del">
+                            <img class="bouton_suppr"src="images/bouton_suppr.png"/>
+                        </i>
+                    </div>
+                    <button id="ajouter" type="button" class="trad ajout hidden">Ajouter</button>
+                </div>
+                
+                <!--
+                <div class="top">
+                    <label for="search-etymologie" id="search-etymologie" class="trad">Racine</label>
+                    <div class="etymo crit">
+                        <input type="text" id="search-etymologie" name="etymo" placeholder="" class="trad_placeholder champ">
+                        <i class="fas fa-trash-alt del">
+                            <img class="bouton_suppr"src="images/bouton_suppr.png"/>
+                        </i>
+                    </div>                    
+                    <button id="ajouter" type="button" class="trad ajout hidden">Ajouter</button>
+                </div>
+                -->
+
+                <div class="top">
+                    <label for="search-abstract" id="search-abstract" class="trad">Définition</label>
+                    <div class="abstract crit">
+                        <input type="text" id="search-abstract" name="abstract" placeholder="" class="trad_placeholder champ">
+                        <i class="fas fa-trash-alt del">
+                            <img class="bouton_suppr"src="images/bouton_suppr.png"/>
+                        </i>
+                    </div>                    
+                    <button id="ajouter" type="button" class="trad ajout hidden">Ajouter</button>
+                </div>
+
+
+                <div class="top">
+                    <label for="search-lieu" class="trad" id="recherche_lieu">Origine géographique</label>
+                    <div class="lieu crit">
+                        <input type="text" list="search-lieu" id="recherche_lieu" name="coverage" class="trad_placeholder champ" placeholder="" />
+                        <datalist id="search-lieu" class="lieu">
+                            <option value="none" id="valeur_aucune">Aucun</option>
+                        </datalist>
+                        <i class="fas fa-trash-alt del">
+                            <img class="bouton_suppr"src="images/bouton_suppr.png"/>
+                        </i>
+                    </div>
+                    <button id="ajouter" type="button" class="trad ajout hidden">Ajouter</button>
+                </div>
+
+
+            </div>
+
+            <div class="top">
+                <label for="search_thematique" id="recherche_theme" class="trad">Thème(s)</label>
+                <div class="theme crit">
+                    <input type="text" list="search-thematique" id="recherche_theme" name="subject" class="trad_placeholder champ" placeholder="" />
+                    <datalist id="search-thematique" class="theme">
+                        <option value="none" id="valeur_aucune" class="trad">Aucun</option>
+                    </datalist>
+                    <i class="fas fa-trash-alt del">
+                        <img class="bouton_suppr"src="images/bouton_suppr.png"/>
+                    </i>
+                </div>
+                <button id="ajouter" type="button" class="trad ajout hidden">Ajouter</button>
+            </div>
+
+
+            <input type="submit" class="trad_value" id="searching_btn" value="Rechercher"/>
+
+        </form>
+        </div>
+        <script src="scripts/recherche.js"></script>
+    </body>
+
+</html>

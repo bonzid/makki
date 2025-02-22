@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Alegreya';
+  src: url("../fonts/Alegreya-Bold.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url("../fonts/Alegreya-Regular.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Light.ttf");
+}
+
+.wrapper {
+  background: #e0e1dd;
+  padding: 25px;
+  padding-right: 50px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-top: 0px;
+  align-items: center;
+  justify-content: center;
+
+} 
+  
+.wrapper h2 { 
+    text-align: center; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    font-family: 'Alegreya';
+    letter-spacing: 2px;
+    color: #415a77; 
+} 
+  
+.wrapper .input_field { 
+    margin-bottom: 10px;
+} 
+  
+.wrapper 
+    .input_field 
+    input[type="text"], 
+    .wrapper 
+    .input_field 
+    input[type="email"],
+.wrapper textarea { 
+    border: 1px solid #efefef; 
+    font-family:'Roboto', sans-serif;
+    font-style: italic;
+    font-size:14px;
+    width: 100%; 
+    padding: 10px; 
+} 
+  
+.wrapper textarea { 
+    resize: none; 
+    height: 100px; 
+
+} 
+  
+.wrapper .btn input[type="submit"] { 
+    border: 0px; 
+    margin-top: 15px; 
+    padding: 10px; 
+    text-align: center; 
+    width: 450px; 
+    background: #415a77; 
+    color: #efefef; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    font-weight: bold; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-family:'Roboto', sans-serif;
+    display: block;
+    margin: 15px auto;
+} 
+
+.uga {
+  margin-right: 50px;
+  margin-left: 10px;
+  margin-top: 3px;
+}

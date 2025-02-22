@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<link rel="stylesheet" href="styles/header.css" />
+	<link rel="icon" href="images/logo.png" type="image/png" sizes="32x32">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	</head>
+	
+    <header class="top-header">
+        <div class="titre">
+            <p class="trad" id="titre_site">Le Lexique libanais de Makki</p>                    
+        </div>
+
+		<div class="login-wrapper">
+			<button class= "button trad" id="login-button">Connexion</button>
+			<div class="login-container">
+			  <form class="login-form" method="POST">
+				<input class ="trad_placeholder" type="text" placeholder="Nom d'utilisateur" id="utilisateur" name="utilisateur" required>
+				<input class ="trad_placeholder" type="password" placeholder="Mot de passe" id="mdp" name="mdp" required>
+				  <input class ="trad_value" type="submit" name="bouton_co" value="Se connecter" id="bouton_co" />
+			  </form>
+			</div>
+		  </div>
+	
+		<div hidden class="login-wrapper_connecte">
+			<button class="button_1 trad" id="login-button_connecte">Connecté</button>
+			<div class="login-container_connecte">
+			  <div class="login-form_connecte">
+	
+				<a class ="button trad" href="" id="bouton_admin">Gestion</a>
+
+				<form id="form_deco" method="POST">
+					<input type="submit" class ="button trad_value" name="bouton_deco" id="bouton_deco" value="Déconnexion"/>
+				</form>
+	
+			  </div>
+			</div>
+		</div>
+		
+        <script src="scripts/bouton.js"></script>
+		
+    </header>
+	
+	<div class="barre">
+		<nav class="banderole">
+			<ul class="menu">
+				<li><a class="trad" id="accueil" href="accueil.html">Accueil</a></li>
+
+				<li><a class="trad" id="recherche">Accès au lexique</a>
+					<ul>
+						<li><a class="lien_lexique_entier trad" href="#" id="lexique_entier">Lexique entier</a></li>
+						<li><a class="trad" id="quiconnait" href="quiconnait.html">Connaissez-vous ce mot ?</a></li>
+						<li><a class="trad arrondie" id="recherche_poussee" href="#">Recherche avancée</a></li>
+					</ul>
+				</li>
+
+				<li><a class="trad" id="thematiques">Accès par thèmes</a>
+					<ul id="thematiques_liste">
+					</ul>
+				</li>
+
+				<li><a class="trad" id="remerciements" href="#">Remerciements</a></li>
+
+				<li><a class="trad" id="langue">Langue du site</a>
+					<ul id="lang_liste">
+					</ul>               
+				</li>
+			</ul>
+		</nav>          
+	</div>
+</html>

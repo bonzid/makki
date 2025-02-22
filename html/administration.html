@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title class="trad" id="title">Lexique libanais de Makki - ADMIN</title>
+		<link rel="stylesheet" href="styles/administration.css" />
+        <script src="scripts/jquery.js"></script>
+	</head>
+
+    <body>
+        <div class="content">
+			<h1 class="trad" id="titre_fichiers_trad">Fichiers de traduction</h1>
+			<table id="table_fichier_trad">
+				<thead>
+					<tr>
+						<th class="trad info_fichiers" id="fichier_trad_langue">Langue</th>
+						<th class="trad info_fichiers" id="fichier_trad">Fichier</th>
+						<th class="trad info_fichiers" id="fichier_trad_date">Date</th>
+						<th class="trad info_fichiers" id="fichier_trad_suppr">Supprimer</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<br/>
+			<form method="POST" enctype="multipart/form-data">
+				<label for="upload_trad" class="trad boutons_fichiers" id="fichier_trad_choisir">Choisir les fichiers</label>
+				<input type="file" id="upload_trad" name="uploadtrad[]" accept=".xlsx,application/vnd.openxmlformatsofficedocument.spreadsheetml.sheet" multiple="multiple" hidden/>
+				<input type="submit" name="submit_file_trad" class="trad_value boutons_fichiers" id="fichier_trad_envoyer" value="Envoyer les fichiers" />
+			</form>
+
+			<h1 class="trad" id="titre_fichiers_data">Fichiers de données</h1>
+			<table id="table_fichier_data">
+				<thead>
+					<tr>
+						<th class="trad info_fichiers" id="fichier_data">Fichier</th>
+						<th class="trad info_fichiers" id="fichier_data_suppr">Supprimer</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<br/>
+			<form method="POST" enctype="multipart/form-data">
+				<label for="upload_data" class="trad boutons_fichiers" id="fichier_data_choisir">Choisir les fichiers</label>
+				<input type="file" id="upload_data" name="uploaddata[]" accept=".ttl,.rdf,.xml" multiple="multiple" hidden/>
+				<input type="submit" name="submit_file_data" class="trad_value boutons_fichiers" id="fichier_data_envoyer" value="Envoyer les fichiers" />
+			</form>
+
+			<h1 class="trad" id="donnees_recues">Messages reçus par formulaire de contact</h1>
+			<table id="table_contacts">			
+				<thead>
+					<tr>
+						<th class="trad info_fichiers" id="contact_nom"></th>
+						<th class="trad info_fichiers" id="contact_sujet"></th>
+						<th class="trad info_fichiers" id="contact_mail"></th>
+						<th class="trad info_fichiers" id="contact_corps"></th>
+						<th class="trad info_fichiers" id="contact_suppr">Supprimer</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	
+	<script src="scripts/admin.js"></script>
+</html>

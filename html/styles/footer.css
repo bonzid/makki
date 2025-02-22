@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Light.ttf");
+}
+
+footer.top-footer {
+  background: #1b263b; /* Couleur de fond */
+  width: 100%; /* Limite la largeur à 100% de la fenêtre */
+  box-sizing: border-box; /* Inclut padding et border dans la largeur */
+  color: #e0e1dd; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement intérieur */
+  display: flex; /* Flexbox pour organiser les sections */
+  justify-content: space-between; /* Espacement entre les sections */
+  align-items: center; /* Aligne les éléments verticalement */
+  font-size: 15px; /* Taille de police globale pour le footer */
+  font-family: Roboto, sans-serif;
+  position: relative; /* Position pour éviter les débordements */
+}
+
+body {
+  margin: 0; /* Supprime les marges par défaut */
+  overflow-x: hidden; /* Empêche le scroll horizontal */
+  font-family: Roboto, sans-serif;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1; /* Chaque section prend un espace égal */
+}
+
+.footer-left {
+  text-align: left; /* Texte aligné à gauche */
+  line-height: 0.2;
+  margin-bottom: 14px;
+}
+
+.footer-center {
+  display: flex; /* Flexbox pour aligner les logos */
+  justify-content: center; /* Centre les logos */
+  align-items: center; /* Aligne les logos verticalement */
+  gap: 20px; /* Espace entre les logos */
+}
+
+.footer-right {
+  text-align: right; /* Texte aligné à droite */
+  font-family: Roboto, sans-serif;
+}
+
+.licence, .contact-link {
+  text-decoration: underline;
+  font-family: Roboto, sans-serif;
+  color: #e0e1dd; /* Couleur du texte */
+
+}
+
+.partenaires {
+  max-height: 60px; /* Taille maximale pour les logos */
+}
+
+#bibliographie{
+  text-decoration: underline;
+  font-family: Roboto, sans-serif;
+  color: #e0e1dd; /* Couleur du texte */
+}

@@ -1,0 +1,96 @@
+.top {
+    display: flex; /* Utiliser Flexbox pour aligner les labels et les champs */
+    align-items: center; /* Alignement vertical centré */
+    margin-bottom: 15px; /* Espacement entre les lignes */
+}
+
+.top label {
+    color: #1b263b; /* Couleur du texte */
+    font-size: 20px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+
+    flex: 0 0 200px; /* Largeur fixe pour les labels */
+    text-align: left; /* Alignement du texte à gauche */
+    margin: 0; /* Supprime les marges inutiles */
+    margin-left:20px;
+}
+
+.top .crit {
+    display: flex; /* Aligner les champs et les icônes à l'intérieur */
+    align-items: center;
+    flex: 1; /* Prend tout l'espace restant après le label */
+}
+
+.top input.champ {
+    background-color: #efefef; /* Fond des champs */
+    color: #1b263b; /* Texte des champs */
+    border-radius: 5px; /* Coins arrondis */
+    border: 1px solid #ccc; /* Bordure légère */
+    padding: 6px; /* Espacement interne */
+    flex: 0.7; /* Le champ s'étire pour remplir l'espace */
+    margin: 0; /* Supprime les marges inutiles */
+}
+
+.top .bouton_suppr {
+    width: 20px; /* Taille du bouton de suppression */
+    height: 20px;
+    margin-left: 10px; /* Espacement entre le champ et le bouton */
+    cursor: pointer; /* Curseur en survol */
+}
+
+.top {
+    display: flex; /* Utiliser Flexbox pour aligner les labels et les champs */
+    align-items: center; /* Alignement vertical centré */
+    margin-bottom: 15px; /* Espacement entre les lignes */
+}
+
+#searching_btn {
+    color: #1b263b; /* Couleur du texte */
+    font-size: 20px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+    flex: 0 0 200px; /* Largeur fixe pour les labels */
+    text-align: center; 
+    margin: 0; /* Supprime les marges inutiles */
+    margin-left:20px;
+}
+
+input[type=submit]#searching_btn {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    background-color: #1b263b;
+    color: #efefef;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 100%; /* Bouton large */
+    max-width: 300px; /* Largeur max du bouton */
+    margin: 20px auto 0; /* Centrage du bouton */
+    display: block;
+}
+
+.ajout {
+    background: #1b263b;
+    cursor: pointer;
+    color: #efefef;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-left: 10px; /* Espacement entre le bouton et le champ */
+}
+
+details {
+    vertical-align:middle;
+    color: #1b263b;
+    text-align: justify;
+    font-size:18px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+    line-height:1.1;
+    margin-left: 20px;
+    margin-right: 20px;
+}

@@ -1,0 +1,427 @@
+@font-face {
+  font-family: 'Alegreya';
+  src: url("../fonts/Alegreya-Bold.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url("../fonts/Alegreya-Regular.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lateef';
+  src: url("../fonts/Lateef-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Light.ttf");
+}
+
+html {
+  opacity : 0;
+  transition : opacity 0.5s ease;
+}
+
+html, body {
+    background-color: #efefef; 
+    padding:0;
+    margin:0;   
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+    font-size:16px;  
+}
+
+.loaded {
+  opacity : 1;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: #e0e1dd;
+    padding: 25px;
+    width: 950px;
+    flex: 1;
+    display: table;
+    color: #415a77;
+}
+
+.titre {
+	display: flex;
+	justify-content: center;
+  color: white; 
+  line-height: 0px;
+  font-size:50px;
+  font-family: 'Alegreya', sans-serif;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px #1b263b;
+}
+
+.texte {
+    vertical-align:middle;
+    color: #1b263b;
+    text-align: justify;
+    font-size:18px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+    line-height:1.1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.textetitre {
+    vertical-align:middle;
+    color: #415a77;
+    text-align: justify; 
+    font-size:28px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 500;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height:0;
+}
+
+#contenu_remerciements,ul{
+  vertical-align:middle;
+  color: #1b263b;
+  text-align: justify;
+  font-size:18px;
+  font-family: 'Alegreya', sans-serif;
+  font-weight: 300;
+  line-height:1.1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+header.top-header {
+    height: 100px;
+    padding:10px;
+    position: relative;
+    background: #415a77;
+    background-image:url('../images/logo_clear.png');
+    background-size: contain;
+    opacity: 1;
+    background-position: center; /* Centre l'image */
+    background-repeat: repeat; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* Barre de navigation */
+.menu {
+    display: flex;           
+    padding:0;                     
+    justify-content: center;
+    margin: 0px; 
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-style:solid;
+    border-color: #843435;
+    text-size-adjust: auto;
+}
+
+.menu li {
+    list-style-type: none ;
+    position: relative;
+}
+
+
+.menu a {
+  display:block;                /* Transformation en block */
+  min-width: 200px;             /* Largeur minimale des liens */  
+  padding: 0.8rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+  text-align: center;           /* Centrage du texte */   
+  background: #843435; /* Couleur d'arrière-plan */
+  color: #efefef;             /* Couleur du texte */
+  text-decoration: none;        /* Suppression du soulignement */
+  transition: 0.5s;
+}
+
+
+.menu a:hover { 
+  background-color: #e0e1dd;
+  color: #1b263b;
+}
+
+.menu ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.banderole {
+  background-color: #843435;
+  height: auto;
+  padding:0;
+  margin:0; 
+}
+
+.menu li:hover ul {
+  display: block;
+  position: absolute;
+  top: auto;
+  z-index: 100;
+}
+
+.arrondie {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#barre_recherche {
+  text-align: center;
+}
+
+.login-wrapper {
+
+  width: 160px;
+  margin: 40px auto 0;
+
+}
+
+
+
+button[id="login-button_connecte"] {
+  padding: 8px 15px;
+  width: 160px;
+  border: 0;
+  outline: 0;
+  top: 15px;
+  right: 20px;
+  width: 160px;
+  position:absolute;
+  color: #efefef;
+  background: #843435;
+  font-size: 14px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  &:active {
+    margin-top: 2px;
+    box-shadow: 0 2px 0 darken(#1b263b, 5%);
+  }
+}
+
+.login-container_connecte {
+  position: absolute;
+  right: 20px;
+  width: 160px;
+  top:45px;
+  font-family: 'Roboto', sans-serif;
+}
+
+input:placeholder-shown {
+  font-style: italic;
+}
+
+.login-form_connecte {
+  display: none;
+  padding: 10px;
+  margin-top: 0;
+  border-radius:4px;
+  background: #efefef;
+}
+
+.login-form_connecte input {
+  width: 100%;
+  margin-bottom: 5px;
+  border: 0;
+  outline: 0;
+  background: #B0C4DE;
+  font-weight: 300;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+  
+  .login-form_connecte input[type="submit"] {
+    width: 103%;
+    color: #efefef;
+    background: #843435;
+    font-style: normal;
+    align-items:center;
+    box-shadow: 0 4px 0 darken(#843435, 5%);
+  }
+
+  input#bouton_deco{
+    display: flex;           /* Utilisation de Flexbox */
+    align-items: center;     /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+    text-align: center;      /* Assure le centrage du texte */
+    height: 20px;           /* Hauteur définie */
+    padding: 0px 10px;      /* Ajustement de l'espacement interne */
+    border: none; 
+  }
+  
+  @include keyframes(slide) {
+  
+    0% {
+      opacity: 0;
+      @include transform(translateY(20px));
+    }
+    100% {
+      opacity: 1;
+      @include transform(translateY(0));
+    }
+  
+  }
+  
+  .open_connecte {
+    @include animation(slide 1s);
+    display: block;
+  }
+
+.login-wrapper_connecte {
+  width: 160px;
+  margin: 40px auto 0;
+}
+
+table, td, th {
+  border: 1px solid #1b263b;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+button[id="login-button"] {
+  padding: 8px 15px;
+  width: 160px;
+  border: 0;
+  outline: 0;
+  top: 15px;
+  right: 20px;
+  width: 160px;
+  position:absolute;
+  color: #efefef;
+  background: #1b263b;
+  font-size: 14px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 4px 0 darken(#1b263b, 5%);
+  font-family: 'Roboto', sans-serif;
+  &:active {
+    margin-top: 2px;
+    box-shadow: 0 2px 0 darken(#1b263b, 5%);
+  }
+}
+
+.login-container {
+  position: absolute;
+  right: 20px;
+  width: 160px;
+  top:45px;
+  font-family: 'Roboto', sans-serif;
+}
+
+input:placeholder-shown {
+  font-style: italic;
+}
+
+.login-form {
+  display: none;
+  padding: 20px;
+  margin-top: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: #efefef;
+  box-shadow: 0 4px 0 darken(#efefef, 5%);}
+
+  .login-form input {
+    width: 100%;
+    margin-bottom: 5px;
+    border: 0;
+    outline: 0;
+    background: #e0e1dd;
+    font-weight: 300;
+    border-radius: 2px;
+    font-family: Roboto, sans-serif;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .login-form input[type="submit"] {
+    width: 103%;
+    color: #efefef;
+    background: #1b263b;
+    font-family: Roboto, sans-serif;
+    box-shadow: 0 4px 0 darken(#1b263b, 5%);
+    cursor: pointer; 
+  }
+  
+  @include keyframes(slide) {
+  
+    0% {
+      opacity: 0;
+      @include transform(translateY(20px));
+    }
+    100% {
+      opacity: 1;
+      @include transform(translateY(0));
+    }
+  
+  }
+  
+  .open {
+    @include animation(slide 1s);
+    display: block;
+  }
+
+
+  .button {
+    width: 100%;
+    padding: 2px 48.5px;
+    margin: 4px;
+    margin-right:-1px;
+    margin-left:0.1px;
+    cursor: pointer; 
+    background: #1b263b;
+    color: #efefef;
+    border-radius: 2px;
+    font-size:14px;
+    text-align:center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  div.msg {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    background-color: #e0e1dd;
+    border-radius: 4px;
+    vertical-align: middle;
+    max-height: 32px;
+    text-align:center;
+    width: 1000px;
+    align-items:center;
+    align-self: center;
+    font-size: 14px;
+    color:#1b263b;
+    border: thin solid #415a77;
+    font-family: 'Roboto', sans-serif;
+  }

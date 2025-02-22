@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Alegreya';
+    src: url("../fonts/Alegreya-Bold.ttf");
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family: 'Alegreya';
+    src: url("../fonts/Alegreya-Regular.ttf");
+    font-weight: 300;
+}
+  
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Lateef';
+    src: url("../fonts/Lateef-Medium.ttf");
+}
+
+/* SECTION RÉSULTATS */
+.results {
+    margin: 15px;
+    padding: 1rem 2rem;
+    background-color: #778da9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alignement à gauche */
+    gap: 1rem; /* Espacement entre les éléments */
+    color: #efefef;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Texte et conteneurs de données */
+.resultats, .resultats_donnees {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #efefef;
+    width: 100%; /* S'adapte à la largeur du parent */
+    padding: 6px;
+    background-color: #778da9;
+    margin: 0; /* Supprime les marges */
+}
+
+/* Titre */
+#titre_resultats {
+    color: #1b263b;
+    text-align: left; /* Alignement à gauche */
+    font-size: 20px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 500;
+    margin: 0 0 15px 0; /* Marge uniquement en bas */
+    line-height: 1.2;
+}
+
+/* Liste déroulante */
+#export_data_select {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    background: #efefef;
+    color: #1b263b;
+    border-radius: 4px;
+    border: none; /* Supprime la bordure par défaut */
+    font-size: 13px;
+    padding: 8px;
+    width: auto; /* Ajuste la largeur selon le contenu */
+    align-self: stretch; /* S'étire pour s'aligner avec le parent */
+}
+
+/* Bouton "Télécharger" */
+#export_data_btn {
+    cursor: pointer;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+    background: #1b263b;
+    color: #efefef;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 8px;
+    border: none; /* Supprime la bordure */
+    width: auto; /* Ajuste la largeur selon le contenu */
+    align-self: stretch; /* S'étire pour s'aligner avec le parent */
+}
+
+/* Texte aligné à gauche */
+.results p {
+    text-align: left;
+    margin: 0;
+}
+
+
+
+/*MISE EN PAGE MOTS*/
+.thematiqueseule {
+    margin: 15px;
+    padding: 1.0rem 2.0rem 1.0rem 2.0rem;
+    background-color: #efefef;
+    box-sizing: border-box;
+	border-radius: 10px;
+	line-height: 1.1rem;
+}
+
+
+ol.thematiqueseule {
+    filter: blur(0.00rem) saturate(80%) opacity(85%);
+    transition: transform 200ms ease-in-out, filter 400ms ease-in-out;
+}
+
+ol.thematiqueseule:hover, ol.thematiqueseule:target {
+    backface-visibility: hidden;
+    filter: blur(0px) saturate(110%) opacity(100%);
+}
+
+div.mots_donnees:hover ol.thematiqueseule:not(:hover) { 
+    transform: scale(0.95) translateZ(0) perspective(1px);
+    backface-visibility: hidden;
+    filter: blur(0.04rem) saturate(65%) opacity(65%);
+}
+
+.similaires {
+    background-color: #efefef;
+    width: 280px;
+    margin: 15px;
+    padding: 6px;
+}
+
+.similaires_donnees {
+    background-color: #efefef;
+    width: 280px;
+    margin: 15px;
+    padding: 6px;
+}
+
+.mots_donnees {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+hr {
+    height: 1px;
+    margin: -0.5em 0;
+    background-color: #fdeee2;
+    border-color: #fdeee2;
+}
+
+
+.definition {
+    border-radius: 4px;
+    padding: 5px;
+    background-color:  #efefef;
+}
+
+h3 {
+    border-radius: 4px;
+    padding: 5px 15px;
+    background:#e0e1dd;
+}
+
+a.mot_titre {
+    color: #1b263b;
+    font-family: 'Lateef', sans-serif;
+    font-size: 34px;
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+#synonyme, #etymo, #origine, #theme, #pron, #exemple {
+    padding: 5px;
+    color:#1b263b;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300, bold;
+}
+
+.defmot {
+    background-color:#efefef;
+    color:#1b263b;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 5px;
+    display: inline-block;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+}
+
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    align-items: stretch;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination a {
+    color:#1b263b;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #778da9;
+    color: #efefef;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #1b263b;
+    color: #efefef;
+} 
+
+/*BOUTON TOP*/
+#scroll_top_btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #778da9; /* Set a background color */
+    color: #1b263b; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 25px;
+    opacity: 0.8;
+    size:20px;
+  }
+  
+#scroll_top_btn:hover {
+    background-color: #1b263b; /* Add a dark-grey background on hover */
+}
+
+/*Images carte et audio*/
+.imgs {
+    width: 25px;
+    size:20px;
+}

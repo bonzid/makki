@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title class="trad" id="title">Lexique libanais de Makki</title>
+        <link rel="stylesheet" href="styles/mots.css" />
+        <script src="scripts/jquery.js"></script>
+	</head>
+
+    <body>
+        
+        <div class="content">  
+
+            <div class ="results"> 
+                <div class="resultats"><p class="trad" id="titre_resultats">Résultats</p></div>
+            </div>
+
+            <header class="pagination"></header>
+            <div class ="mots_donnees">    
+                <div class="thematiqueseule">       
+                <definition>
+                    <p class="donnees_definition"> --- données --- </p>
+                        <p>
+                            <exemples>
+                                <ex1 class="donnees_exemples">phrase exemple</ex1>
+                            </exemples>
+                        </p>
+
+                        <p>
+                            <synonymes>
+                                <syn1 class="donnees_synonyme">synonyme</syn1>
+                            </synonymes>
+                        </p>
+
+                        <p>
+                            <etymologie class="donnees_etymologie">etymologie</etymologie>
+                        </p>
+
+                        <p>
+                            <origine class="donnees_origine">origine</origine>
+                        </p>
+
+                        <p>
+                            <prononciation class="donnees_prononciation">pron</prononciation>
+                            <a href=""><img src="images/audio.png" class="imgs" alt="Prononciation"></a>
+                        </p>
+
+                        <p>
+                            <localisation class="donnees_localisation">localisation</localisation>
+                            <?php if (!empty($word_data['localisation'])): ?>
+                            <a href="https://www.google.com/maps/search/?api=1&query=<?php echo urlencode($word_data['localisation']); ?>" target="_blank">
+                                <img src="images/map.png" class="imgs" alt="Voir sur la carte">
+                            </a>
+                            <?php endif; ?>
+                        </p>
+
+                </definition>
+                </div>
+
+                <div class="thematiqueseule">       
+                    <definition>
+                        <p class="donnees_definition"> --- données --- </p>
+                            <p>
+                                <exemples>
+                                    <ex1 class="donnees_exemples">phrase exemple</ex1>
+                                </exemples>
+                            </p>
+    
+                            <p>
+                                <synonymes>
+                                    <syn1 class="donnees_synonyme">synonyme</syn1>
+                                </synonymes>
+                            </p>
+    
+                            <p>
+                                <etymologie class="donnees_etymologie">etymologie</etymologie>
+                            </p>
+    
+                            <p>
+                                <origine class="donnees_origine">origine</origine>
+                            </p>
+    
+                            <p>
+                                <prononciation class="donnees_prononciation">pron</prononciation>
+                                <a href=""><img src="images/audio.png" class="imgs" alt="Prononciation"></a>
+                            </p>
+    
+                            <p>
+                                <localisation class="donnees_localisation">localisation</localisation>
+                                <a href=""><img src="images/map.png" class="imgs" alt="Localisation"></a>
+                            </p>
+    
+                    </definition>
+                    </div>
+            </div>
+            <footer class="pagination"></footer>
+            <input type="image" src="images/top.png" id="scroll_top_btn" class="img"></input>
+
+        </div>
+
+
+    </body>  
+
+    <script src="scripts/mots.js"></script>
+</html>
+

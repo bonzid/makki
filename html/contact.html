@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title class="trad" id="title">Lexique libanais de Makki - Contact</title>
+        <link rel="stylesheet" href="styles/contact.css" />
+        <script src="scripts/jquery.js"></script>
+	</head>
+
+    <body>
+        
+        <div class="content">
+
+            <p class="trad texte" id="contact_donnees">En remplissant ce formulaire, vous acceptez que les données entrées soient conservées jusqu'à traitement par un administrateur, et ce dans l'unique but de 
+                donner éventuellement suite à votre prise de contact. Si celle-ci n'a pas lieu, vos données seront aussi supprimées.</p>
+
+            <form class="wrapper" method="POST"> 
+                <h2 class="trad" id="contact">Formulaire de contact</h2> 
+
+                    <div class="input_field"> 
+                        <input name="name" type="text" class ="trad_placeholder" placeholder="NOM Prénom" id="name" required> 
+                    </div> 
+                    
+                    <div class="input_field"> 
+                        <input name="uni" type="text" class ="trad_placeholder" placeholder="Université (facultatif)" id="universite"> 
+                    </div> 
+
+                    <div class="input_field"> 
+                        <input name="objet" type="text" class ="trad_placeholder" placeholder="Sujet" id="sujet" required> 
+                    </div> 
+
+                    <div class="input_field"> 
+                        <input name="email" type="email" class ="trad_placeholder" placeholder="Votre e-mail" id="email" required> 
+                    </div>
+
+                    <div class="input_field"> 
+                        <textarea name="msg" class ="trad_placeholder" placeholder="Votre message" id="message" required></textarea> 
+                    </div> 
+
+                    <div class="btn"> 
+                        <input name="contact" class ="trad_value" type="submit" id="msg_btn" value=""> 
+                    </div> 
+            </form> 
+            
+        </div>
+    </body>  
+</html>
+

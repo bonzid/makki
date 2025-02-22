@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Alegreya';
+    src: url("../fonts/Alegreya-Bold.ttf");
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Alegreya';
+    src: url("../fonts/Alegreya-Regular.ttf");
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Light.ttf");
+  }
+
+.boutons_fichiers {
+
+    cursor: pointer; 
+    font-family:'Roboto', sans-serif;
+    background: #efefef;
+    border-radius: 4px;
+    border: 1.5px solid #1b263b;;
+    padding: 5px 15px;
+    font-size: 15px;
+
+}
+
+.info_fichiers {
+    background: #efefef;
+}
+
+h1{
+    vertical-align:middle;
+    color: #415a77;
+    text-align: justify; 
+    font-size:28px;
+    font-family: Alegreya, sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}

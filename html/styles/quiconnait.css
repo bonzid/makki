@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Alegreya';
+    src: url("../fonts/Alegreya-Bold.ttf");
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family: 'Alegreya';
+    src: url("../fonts/Alegreya-Regular.ttf");
+    font-weight: 300;
+}
+  
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Lateef';
+    src: url("../fonts/Lateef-Medium.ttf");
+}
+
+/* SECTION RÉSULTATS */
+.results {
+    margin: 15px;
+    padding: 1rem 2rem;
+    background-color: #778da9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alignement à gauche */
+    gap: 1rem; /* Espacement entre les éléments */
+    color: #efefef;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Texte et conteneurs de données */
+.resultats, .resultats_donnees {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #efefef;
+    width: 100%; /* S'adapte à la largeur du parent */
+    padding: 6px;
+    background-color: #778da9;
+    margin: 0; /* Supprime les marges */
+}
+
+/* Titre */
+#titre_quiconnait {
+    color: #efefef;
+    text-align: left; /* Alignement à gauche */
+    font-size: 25px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 500;
+    margin-top: 10px; 
+    line-height: 1.2;
+}
+
+
+/* Texte aligné à gauche */
+.results p {
+    text-align: left;
+    margin: 0;
+}
+
+#explication_quiconnait{
+    vertical-align: middle;
+    color: #1b263b;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    margin-left:5px;
+    margin-top:auto;
+    margin-right:5px;
+}
+
+#formulaire_quiconnait{
+    vertical-align: middle;
+    color: #3d5672;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    margin-top:30px;
+    margin-left:0px;
+    margin-right:0px;
+}
+
+
+/*MISE EN PAGE MOTS*/
+.thematiqueseule {
+    margin: 15px;
+    padding: 1.0rem 2.0rem 1.0rem 2.0rem;
+    background-color: #efefef;
+    box-sizing: border-box;
+	border-radius: 10px;
+	line-height: 1.1rem;
+}
+
+
+ol.thematiqueseule {
+    filter: blur(0.00rem) saturate(80%) opacity(85%);
+    transition: transform 200ms ease-in-out, filter 400ms ease-in-out;
+}
+
+ol.thematiqueseule:hover, ol.thematiqueseule:target {
+    backface-visibility: hidden;
+    filter: blur(0px) saturate(110%) opacity(100%);
+}
+
+div.mots_donnees:hover ol.thematiqueseule:not(:hover) { 
+    transform: scale(0.95) translateZ(0) perspective(1px);
+    backface-visibility: hidden;
+    filter: blur(0.04rem) saturate(65%) opacity(65%);
+}
+
+.similaires {
+    background-color: #efefef;
+    width: 280px;
+    margin: 15px;
+    padding: 6px;
+}
+
+.similaires_donnees {
+    background-color: #efefef;
+    width: 280px;
+    margin: 15px;
+    padding: 6px;
+}
+
+.mots_donnees {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+hr {
+    height: 1px;
+    margin: -0.5em 0;
+    background-color: #fdeee2;
+    border-color: #fdeee2;
+}
+
+
+.definition {
+    border-radius: 4px;
+    padding: 5px;
+    background-color:  #efefef;
+}
+
+h3 {
+    border-radius: 4px;
+    padding: 5px 15px;
+    background:#e0e1dd;
+}
+
+a.mot_titre {
+    color: #1b263b;
+    font-family: 'Lateef', sans-serif;
+    font-size: 34px;
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+#synonyme, #etymo, #origine, #theme, #pron, #exemple {
+    padding: 5px;
+    color:#1b263b;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300, bold;
+}
+
+.defmot {
+    background-color:#efefef;
+    color:#1b263b;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 5px;
+    display: inline-block;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+}
+
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    align-items: stretch;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination a {
+    color:#1b263b;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #778da9;
+    color: #efefef;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #1b263b;
+    color: #efefef;
+} 
+
+/*BOUTON TOP*/
+#scroll_top_btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #778da9; /* Set a background color */
+    color: #1b263b; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 25px;
+    opacity: 0.8;
+    size:20px;
+  }
+  
+#scroll_top_btn:hover {
+    background-color: #1b263b; /* Add a dark-grey background on hover */
+}
+
+/*Images carte et audio*/
+.imgs {
+    width: 25px;
+    size:20px;
+}
+
+#bouton_quiconnait{
+    color: #1b263b; /* Couleur du texte */
+    font-size: 20px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+    flex: 0 0 200px; /* Largeur fixe pour les labels */
+    text-align: center; 
+    margin: 0; /* Supprime les marges inutiles */
+    margin-left:20px;
+}
+
+#bouton_quiconnait {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #1b263b;
+    color: #efefef;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 100%; /* Bouton large */
+    max-width: 300px; /* Largeur max du bouton */
+    margin: 20px auto 0; /* Centrage du bouton */
+    display: block;
+}

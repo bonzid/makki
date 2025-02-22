@@ -1,0 +1,14 @@
+{
+    "mot" : "html/mots.html",
+    "theme" : "html/thematiques.html",
+    "recherche" : "html/recherche.html",
+    "accueil" : "html/accueil.html",
+    "contact" : "html/contact.html",
+    "administration" : "html/administration.html",
+	"licences" : "html/licences.html",
+    "remerciements" : "html/remerciements.html",
+    "contribution":"html/contribution.html",
+    "quiconnait":"html/quiconnait.html",
+    "quiconnait_mots":"html/quiconnait_mots.html",
+    "bibliographie":"html/bibliographie.html"
+}
