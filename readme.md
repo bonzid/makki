@@ -23,7 +23,7 @@ Pour valoriser ce précieux travail, nous avons développé une plateforme perme
 
 ## Documentation
 
-- [**Manuel d'utilisation**](guide.md)
+- [**Manuel d'utilisation : utilisateur**](guide.md)
 - [Note de portabilité](port.md)
 - [Note d'architecture](arch.md)
 - [Note de sécurité](security.md)
