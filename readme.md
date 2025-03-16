@@ -21,6 +21,7 @@ Pour valoriser ce précieux travail, nous avons développé une plateforme perme
 - <b>Corrections</b> : fonction recherche, corrections d'affichage mineures
 - <b>Mise à jour de la documentation</b>
 
+![Aperçu de la plateforme](preview.png)
 
 ## Documentation
 
